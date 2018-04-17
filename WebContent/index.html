@@ -7,19 +7,20 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.watermark.js"></script>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/cover.css">
 	<link rel="stylesheet" href="css/custum.css">
-
 </head>
 <body class="text-center">
 
     <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
 		<header class="masthead">
 			<div class="inner">
-				<h3 class="masthead-brand"><img src="imgs/logo.png" width="50" height="50"/></h3>
+				<h3 class="masthead-brand"><img src="imgs/logo.png" width="50" height="50"/>&nbsp;&nbsp;上海英格人才</h3>
 				<nav class="nav nav-masthead justify-content-center">
-					<a class="nav-link active" href="#">猎头服务</a>
+					<a class="nav-link active" href="#">首页</a>
+					<a class="nav-link" href="#">猎头服务</a>
 					<a class="nav-link" href="#">人力资源方案</a>
 					<a class="nav-link" href="#">法律解决方案</a>
 					<a class="nav-link" href="#">联系我们</a>
@@ -63,6 +64,20 @@ talent training, and frequency problems.</small></p>
 			</div>
 		</div>
 
+		<div class="row desc">
+			<div class="col">
+		      	<div class="card card-tip" style="min-height: 100px!important">
+					<div class="card-body">
+						<p class="card-text">上海英格人才公司是一家专业从事人才交流、管理者素质评价的专业机构。
+经过多年的实践和运作，在不断的进步和完善过程中，已经形成了既有自身特色，又符合国际惯例的运作方式。
+公司建有丰富的人才信息网络、科学的人才评价系统，以及大量优秀的培训课程。
+拥有一支专家化的员工队伍、一批专业的招聘培训顾问，以及长期从事培训、管理咨询领域的资深顾问，籍此以丰富的经验、规范的流程、一流的工作效率、高质量的工作态度为客户提供满意服务。
+已连续几年被评为“信得过人才服务机构”。诚信、负责、务实、求精是我们共同的价值。</p>
+					</div>
+		    	</div>
+			</div>
+		</div>
+
 		<div class="case-image-div">
 			<img class="case-image" src="imgs/case.png">
 		</div>
@@ -74,6 +89,16 @@ talent training, and frequency problems.</small></p>
 			</div>
 		</footer>
     </div>
+    <script type="text/javascript">
+		$('body').watermark({
+		    texts : ["测试中", "BATE", "非正式用途"], //水印文字
+		    textColor : "#d2d2d2", //文字颜色
+		    textFont : '30px 微软雅黑', //字体
+		    width : 100, //水印文字的水平间距
+		    height : 100,  //水印文字的高度间距（低于文字高度会被替代）
+		    textRotate : -30 //-90到0， 负数值，不包含-90
+		});
+	</script>
 
 </body>
 </html>
